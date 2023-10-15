@@ -1,0 +1,228 @@
+/* Apply the border-box sizing to all elements */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: black;
+  background-color: #c2c2c2;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  height: calc(100vh - 200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container-game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7eedd;
+  height: 400px;
+}
+
+.container-menu {
+  height: 500px;
+  width: 500px;
+  background-color: #f7eedd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.div-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.div-btn label,
+input {
+  padding: 15px;
+}
+
+.div-btn button {
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+  margin: 15px;
+  background: #2c2c2c;
+  color: #fdf6fd;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+.cell:hover {
+  cursor: pointer;
+}
+
+/* CSS for colored cells */
+.red-cell {
+  color: red;
+}
+
+/* Login Popup Styles */
+.winner-display {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.winner-display-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #c2c2c2;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  display: inline-block;
+  margin: 5px;
+  background: #2c2c2c;
+  color: #fdf6fd;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+  color: #1fe2ec;
+}
+
+.container-board {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7eedd;
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7eedd;
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+}
+
+.chat-head {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid black;
+  width: 100%;
+  height: 50px;
+}
+
+.chat-div {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  height: 400px;
+}
+
+.chat-foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid black;
+  width: 100%;
+  height: 50px;
+}
+
+.chat-foot input {
+  border-radius: 10px;
+  width: 350px;
+  height: 35px;
+}
+
+.chat-foot button {
+  width: 100px;
+  height: 35px;
+}
+
+.board-head {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid black;
+  width: 100%;
+  height: 50px;
+}
+
+.board-foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid black;
+  width: 100%;
+  height: 50px;
+}
+
+.bubble-chat {
+  display: flex;
+  margin: 10px;
+  border-radius: 10px;
+  align-items: center;
+  border: 2px solid black;
+  background-color: white;
+}
