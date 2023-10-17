@@ -130,15 +130,28 @@ function checkForWinningCombination(cellArr) {
       if (cellA.cellContent === cellB.cellContent && cellB.cellContent === cellC.cellContent) {
         // We have a winner
         const winnerSymbol = cellC.cellContent
-        console.log(`Player [ ${winnerSymbol} ] wins!`)
-        highlightWinningCells(combination)
 
-        document.getElementById("winner-display").style.display = "block"
-        document
-          .getElementById("winner-display-content")
-          .insertAdjacentHTML("afterbegin", `<h2><strong> Winner: Player [ ${winnerSymbol} ] </strong></h2>`)
+        if (winnerSymbol === "X") {
+          console.log(`Player 1 wins!`)
+          highlightWinningCells(combination)
 
-        // You can add code to handle the end of the game here
+          document.getElementById("winner-display").style.display = "block"
+          document
+            .getElementById("winner-display-content")
+            .insertAdjacentHTML("afterbegin", `<h2><strong> Winner: Player 1 </strong></h2>`)
+
+          // You can add code to handle the end of the game here
+        } else if (winnerSymbol === "O") {
+          console.log(`Player 2 wins!`)
+          highlightWinningCells(combination)
+
+          document.getElementById("winner-display").style.display = "block"
+          document
+            .getElementById("winner-display-content")
+            .insertAdjacentHTML("afterbegin", `<h2><strong> Winner: Player 2 </strong></h2>`)
+
+          // You can add code to handle the end of the game here
+        }
       }
     }
   }
